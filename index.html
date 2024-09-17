@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter a city">
+        <button id="searchButton">Search</button>
+        <div id="weather-container" class="weather-info">
+            <h2 id="location"></h2>
+            <img id="weather-img" />
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <table>
+                <tr>
+                    <th>
+                        <p>Humidity</p>
+                    </th>
+                    <th>
+                        <p id="humidity"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>UV</p>
+                    </th>
+                    <th>
+                        <p id="uv"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Wind</p>
+                    </th>
+                    <th>
+                        <p id="wind"></p>
+                    </th>
+                </tr>
+            </table>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=43.67,-79.42&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://embedgooglemap.net/124/"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
